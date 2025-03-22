@@ -10,13 +10,11 @@ fi
 echo "Homebrew installed. Updating Homebrew..."
 brew update
 
-echo "Installing Homebrew packages..."
-
 # -------------------------
 # Leaves
 # -------------------------
 
-$BREWFILE="$(dirname "$0")/Brewfile"
+BREWFILE="$(dirname "$0")/Brewfile"
 if [ ! -f "$BREWFILE" ]; then
     echo "Brewfile not found. Please create a Brewfile in the same directory as this script."
     exit 1
