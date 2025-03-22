@@ -38,6 +38,7 @@ cask "1password"
 cask "raycast"
 cask "visual-studio-code"
 cask "visual-studio-code-insiders"
+cask "postman"
 
 # Browsers
 cask "arc"
