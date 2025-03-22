@@ -1,0 +1,9 @@
+[user]
+	name = CHANGEME
+	email = CHANGEME@example.com
+
+[core]
+	excludesfile = ~/.config/git/ignore
+
+[push]
+	autoSetupRemote = true

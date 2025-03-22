@@ -26,10 +26,10 @@ git clone https://github.com/luixlacrux/dotfiles.git
 cd dotfiles
 ```
 
-2. Deploy the dotfiles using Stow. For example, to set up the tmux configuration:
+2. Deploy the dotfiles using Stow. For example, to set up the zsh configuration:
 
 ```bash
-stow tmux
+stow git
 ```
 
 Repeat the above step for each configuration set you want to apply, like `git`, `zsh`,  etc.
