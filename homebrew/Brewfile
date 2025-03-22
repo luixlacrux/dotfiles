@@ -33,12 +33,9 @@ brew "fastfetch"
 # -------------------------
 
 # Daily
-cask "warp"
-cask "1password"
 cask "raycast"
-cask "visual-studio-code"
-cask "visual-studio-code-insiders"
-cask "postman"
+cask "1password"
+cask "bitwarden"
 
 # Browsers
 cask "arc"
@@ -48,9 +45,11 @@ cask "brave-browser"
 
 # Development
 cask "orbstack"
-cask "android-studio"
+cask "postman"
 cask "ngrok"
 cask "warp"
+cask "visual-studio-code"
+cask "visual-studio-code-insiders"
 
 # Messaging
 cask "zoom"
