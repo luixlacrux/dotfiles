@@ -1,0 +1,67 @@
+# Taps
+tap "jandedobbeleer/oh-my-posh"
+
+# Git and GitHub
+brew "git"
+brew "gh"
+brew "git-standup"
+
+# Node and package managers
+brew "nvm"
+brew "pnpm"
+brew "yarn"
+
+
+# Shell and terminal
+brew "zsh"
+brew "stow"
+brew "coreutils"
+brew "oh-my-posh"
+brew "lsd"
+
+# Cloud and DevOps
+brew "awscli"
+brew "flyctl"
+
+# Miscellaneous
+brew "jq"
+brew "ffmpeg"
+brew "fastfetch"
+
+# -------------------------
+# Casks
+# -------------------------
+
+# Daily
+cask "warp"
+cask "1password"
+cask "raycast"
+cask "visual-studio-code"
+cask "visual-studio-code-insiders"
+
+# Browsers
+cask "arc"
+cask "firefox"
+cask "google-chrome"
+cask "brave-browser"
+
+# Development
+cask "orbstack"
+cask "android-studio"
+cask "ngrok"
+cask "warp"
+
+# Messaging
+cask "zoom"
+cask "slack-cli"
+
+# Fonts
+cask "font-hasklug-nerd-font"
+cask "font-lilex-nerd-font"
+cask "font-monaspace"
+
+# Design
+cask "figma"
+
+# Miscellaneous
+cask "appcleaner"

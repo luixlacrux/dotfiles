@@ -16,77 +16,13 @@ echo "Installing Homebrew packages..."
 # Leaves
 # -------------------------
 
-# Git and GitHub
-brew install git
-brew install gh
-brew install git-standup
+$BREWFILE="$(dirname "$0")/Brewfile"
+if [ ! -f "$BREWFILE" ]; then
+    echo "Brewfile not found. Please create a Brewfile in the same directory as this script."
+    exit 1
+fi
 
-# Node and Package Managers
-brew install nvm
-brew install pnpm
-brew install yarn
-brew install pkgxdev/made/pkgx
-
-# Shell and Utilities
-brew install zsh
-brew install fzf
-brew install zoxide
-brew install stow
-brew install coreutils
-brew install jandedobbeleer/oh-my-posh/oh-my-posh
-brew install lsd
-
-# Cloud and Deployment
-brew install awscli
-brew install flyctl
-brew install supabase/tap/supabase
-
-# Miscellaneous Utilities
-brew install jq
-brew install ffmpeg
-brew install fastfetch
-brew install tpm
-brew install act
-
-# -------------------------
-# Casks
-# -------------------------
-
-# Daily
-brew install --cask 1password
-brew install --cask kitty
-brew install --cask slack-cli
-brew install --cask rectangle
-brew install --cask raycast
-
-# Browsers
-brew install --cask arc
-brew install --cask firefox
-brew install --cask google-chrome
-brew install --cask brave-browser
-
-# Development
-brew install --cask orbstack
-brew install --cask android-studio
-brew install --cask ngrok
-brew install --cask zulu17
-
-# Messaging
-brew install --cask signal
-brew install --cask discord
-brew install --cask zoom
-
-# Fonts
-brew install --cask font-hasklug-nerd-font
-brew install --cask font-lilex-nerd-font
-brew install --cask font-monaspace
-
-# Design
-brew install --cask figma
-
-# Misc
-brew install --cask sonos
-brew install --cask appcleaner
-brew install --cask surfshark
+echo "Installing Homebrew packages..."
+brew bundle --file="$BREWFILE"
 
 echo "Homebrew packages installed."

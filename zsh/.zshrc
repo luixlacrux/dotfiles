@@ -14,15 +14,10 @@ source $ZSH_FOLDER/functions
 source $ZSH_FOLDER/aliases
 source $ZSH_FOLDER/completions
 
-source $ZSH_FOLDER/android
 source $ZSH_FOLDER/oh-my-posh
-source $ZSH_FOLDER/pkgx
 source $ZSH_FOLDER/ruby
 
 source $ZSH_FOLDER/zstyle
-
-source $ZSH_FOLDER/fzf
-source $ZSH_FOLDER/zoxide
 
 if command -v fastfetch &> /dev/null; then
   fastfetch

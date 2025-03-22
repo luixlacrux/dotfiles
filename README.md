@@ -1,6 +1,8 @@
 # Dotfiles Configuration
 
-This repository contains my personal dotfiles for various tools and applications like tmux, Alacritty, and Zsh. It uses GNU Stow to manage and link these configuration files easily across different systems.
+This repository contains my personal dotfiles for various tools and applications like git, zsh, and others. It uses GNU Stow to manage and link these configuration files easily across different systems.
+
+> **Note**: This repository was forked and inspired by [maximux13/dotfiles](https://github.com/maximux13/dotfiles).
 
 ## Getting Started
 
@@ -20,7 +22,7 @@ To clone the repository and set up the dotfiles, follow these steps:
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/maximux13/dotfiles.git
+git clone https://github.com/luixlacrux/dotfiles.git
 cd dotfiles
 ```
 
@@ -30,7 +32,7 @@ cd dotfiles
 stow tmux
 ```
 
-Repeat the above step for each configuration set you want to apply, like `alacritty`, `zsh`, etc.
+Repeat the above step for each configuration set you want to apply, like `git`, `zsh`,  etc.
 
 ### Homebrew Installation (macOS)
 
