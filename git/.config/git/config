@@ -1,6 +1,6 @@
 [user]
-	name = CHANGEME
-	email = CHANGEME@example.com
+	name = Luis Lacruz
+	email = luixlacrux@users.noreply.github.com
 
 [core]
 	excludesfile = ~/.config/git/ignore
