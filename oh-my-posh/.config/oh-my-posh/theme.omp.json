@@ -42,6 +42,15 @@
           "style": "plain",
           "template": "x ",
           "type": "status"
+        },
+        {
+            "foreground": "#FFD43B",
+          "properties": {
+            "fetch_version": true
+          },
+          "style": "plain",
+          "template": "  {{ .Full }} ",
+          "type": "python"
         }
       ],
       "type": "prompt"

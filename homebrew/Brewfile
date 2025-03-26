@@ -12,6 +12,8 @@ brew "nvm"
 brew "pnpm"
 brew "yarn"
 
+# Python
+brew "pyenv"
 
 # Shell and terminal
 brew "zsh"

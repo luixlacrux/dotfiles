@@ -16,6 +16,7 @@ source $ZSH_FOLDER/completions
 
 source $ZSH_FOLDER/oh-my-posh
 source $ZSH_FOLDER/ruby
+source $ZSH_FOLDER/pyenv
 
 source $ZSH_FOLDER/zstyle
 
