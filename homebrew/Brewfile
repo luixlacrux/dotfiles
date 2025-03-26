@@ -68,6 +68,7 @@ cask "figma"
 # Miscellaneous
 cask "appcleaner"
 cask "aerospace"
+cask "cap"
 
 # VSCode Extensions
 vscode "astro-build.astro-vscode"
