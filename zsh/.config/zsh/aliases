@@ -1,4 +1,3 @@
 alias pnpm="use_specific_pnpm"
 alias code="code-insiders"
 alias ls="lsd --tree --depth 1"
-alias to_mp4="$HOME/zsh/.config/zsh/scripts/to_mp4.sh"
