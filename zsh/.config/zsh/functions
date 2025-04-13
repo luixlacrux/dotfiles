@@ -36,3 +36,62 @@ use_specific_pnpm() {
   echo "󱗼 Using default pnpm version"
   command pnpm "$@"
 }
+
+compress_pdf() {
+  # Check if help is requested
+  if [[ "$1" == "--help" ]]; then
+    echo "Usage: compress_pdf <input_pdf> [resolution] [jpeg_quality]"
+    echo "Compress a PDF file using Ghostscript with adjustable resolution and JPEG quality."
+    echo ""
+    echo "  input_pdf      The PDF file to compress."
+    echo "  resolution     The desired resolution for color images in dpi (default: 140)"
+    echo "  jpeg_quality   The JPEG compression quality (0-100, default: 75)"
+    echo ""
+    echo "Examples:"
+    echo "  compress_pdf mydoc.pdf"
+    echo "      # Compress 'mydoc.pdf' with default settings, generating 'compressed_mydoc.pdf' in the same directory."
+    echo "  compress_pdf mydoc.pdf 150 80"
+    echo "      # Compress 'mydoc.pdf' with 150 dpi resolution and JPEG quality of 80."
+    return 0
+  fi
+
+  # Ensure an input file is provided
+  if [[ -z "$1" ]]; then
+    echo "Error: No input file provided."
+    echo "Usage: compress_pdf <input_pdf> [resolution] [jpeg_quality]"
+    return 1
+  fi
+
+  local input_pdf="$1"
+  # Extract the base filename and directory of the input PDF
+  local base=$(basename "$input_pdf")
+  local dir=$(dirname "$input_pdf")
+
+  # Set the output file name: prepend "compressed_" to the base filename in the same directory
+  local output_pdf="${dir}/compressed_${base}"
+  # Set resolution and JPEG quality, or use default values if not provided
+  local resolution="${2:-140}"
+  local jpegq="${3:-75}"
+
+  echo "Compressing '$input_pdf' to '$output_pdf'"
+  echo "Using resolution: ${resolution} dpi and JPEG quality: ${jpegq}"
+
+  gs -sDEVICE=pdfwrite -dNOPAUSE -dQUIET -dBATCH \
+     -dCompatibilityLevel=1.4 \
+     -dPDFSETTINGS=/default \
+     -dDownsampleColorImages=true \
+     -dColorImageDownsampleType=/Bicubic \
+     -dColorImageResolution="$resolution" \
+     -dAutoFilterColorImages=false \
+     -dColorImageFilter=/DCTEncode \
+     -dJPEGQ="$jpegq" \
+     -sOutputFile="$output_pdf" \
+     "$input_pdf"
+
+  if [[ $? -eq 0 ]]; then
+    echo "PDF compressed successfully: '$output_pdf'"
+  else
+    echo "Error compressing the PDF."
+    return 1
+  fi
+}

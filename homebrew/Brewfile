@@ -31,6 +31,7 @@ brew "flyctl"
 brew "jq"
 brew "ffmpeg"
 brew "fastfetch"
+brew "ghostscript"
 
 # -------------------------
 # Casks
