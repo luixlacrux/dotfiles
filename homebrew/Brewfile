@@ -75,7 +75,6 @@ cask "appcleaner"
 cask "aerospace"
 cask "cap"
 cask "streamlabs"
-cask "logitune"
 
 # VSCode Extensions
 vscode "astro-build.astro-vscode"
