@@ -60,6 +60,7 @@ cask "visual-studio-code@insiders"
 # Messaging
 cask "zoom"
 cask "slack"
+cask "microsoft-teams"
 
 # Fonts
 cask "font-hasklug-nerd-font"
@@ -74,6 +75,7 @@ cask "appcleaner"
 cask "aerospace"
 cask "cap"
 cask "streamlabs"
+cask "logitune"
 
 # VSCode Extensions
 vscode "astro-build.astro-vscode"
