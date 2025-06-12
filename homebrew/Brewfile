@@ -94,7 +94,9 @@ vscode "ms-python.black-formatter"
 vscode "ms-python.debugpy"
 vscode "ms-python.python"
 vscode "ms-python.vscode-pylance"
-vscode "ms-python.vscode-python-envs"
+# vscode "ms-python.vscode-python-envs"
+# Error while installing extension ms-python.vscode-python-envs: Can't install release version of 'Python Environments' extension because it has no release version.
+# Failed Installing Extensions: ms-python.vscode-python-envs
 vscode "ms-vscode.atom-keybindings"
 vscode "rvest.vs-code-prettier-eslint"
 vscode "sibiraj-s.vscode-scss-formatter"
