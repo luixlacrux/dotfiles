@@ -19,7 +19,3 @@ source $ZSH_FOLDER/ruby
 source $ZSH_FOLDER/pyenv
 
 source $ZSH_FOLDER/zstyle
-
-if command -v fastfetch &> /dev/null; then
-  fastfetch
-fi

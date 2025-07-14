@@ -32,7 +32,6 @@ brew "flyctl"
 # Miscellaneous
 brew "jq"
 brew "ffmpeg"
-brew "fastfetch"
 brew "ghostscript"
 
 # -------------------------
