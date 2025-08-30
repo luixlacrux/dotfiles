@@ -56,13 +56,11 @@ cask "postman"
 cask "ngrok"
 cask "warp"
 cask "visual-studio-code"
-cask "visual-studio-code@insiders"
 cask "cursor"
 
 # Messaging
 cask "zoom"
 cask "slack"
-cask "microsoft-teams"
 
 # Fonts
 cask "font-hasklug-nerd-font"
@@ -74,9 +72,7 @@ cask "figma"
 
 # Miscellaneous
 cask "appcleaner"
-cask "aerospace"
-cask "cap"
-cask "streamlabs"
+cask "dbeaver-community"
 
 # VSCode Extensions
 vscode "astro-build.astro-vscode"
