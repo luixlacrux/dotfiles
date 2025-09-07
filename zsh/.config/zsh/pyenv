@@ -1,2 +1,0 @@
-eval "$(pyenv init --path)"
-pyenv global 3.11

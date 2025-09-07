@@ -1,8 +1,0 @@
-export NVM_DIR="$HOME/.nvm"
-if [ -s "$(brew --prefix nvm)/nvm.sh" ]; then
-  . "$(brew --prefix nvm)/nvm.sh"  # This loads nvm
-fi
-
-if [ -s "$(brew --prefix nvm)/etc/bash_completion.d/nvm" ]; then
-  . "$(brew --prefix nvm)/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
-fi

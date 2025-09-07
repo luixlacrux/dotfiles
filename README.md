@@ -1,6 +1,12 @@
-# Dotfiles Configuration
+# Minimalist Dotfiles
 
-This repository contains my personal dotfiles for various tools and applications like git, zsh, and others. It uses GNU Stow to manage and link these configuration files easily across different systems.
+A clean and minimal dotfiles configuration focused on essential development tools. This repository contains configurations for:
+
+- **Homebrew** - Package management and dependency installation
+- **Oh My Posh** - Beautiful and customizable terminal prompt
+- **Zsh** - Modular shell configuration with aliases, completions, and plugins
+
+Uses GNU Stow for easy symlink management across different systems.
 
 > **Note**: This repository was forked and inspired by [maximux13/dotfiles](https://github.com/maximux13/dotfiles).
 
@@ -26,27 +32,59 @@ git clone https://github.com/luixlacrux/dotfiles.git
 cd dotfiles
 ```
 
-2. Deploy the dotfiles using Stow. For example, to set up the zsh configuration:
+2. Deploy the configurations using Stow:
 
 ```bash
-stow git
-```
+# Install shell configuration
+stow zsh
 
-Repeat the above step for each configuration set you want to apply, like `git`, `zsh`,  etc.
+# Install Oh My Posh theme
+stow oh-my-posh
+```
 
 ### Homebrew Installation (macOS)
 
-If you are using macOS, you can use the provided `install.sh` script to install all the necessary dependencies via Homebrew. To do so, run the following commands:
+Install all necessary dependencies and applications using the provided Brewfile:
 
 ```bash
-cd path/to/dotfiles/homebrew
+cd homebrew
 chmod +x install.sh
 ./install.sh
 ```
 
+This will install all packages defined in the `Brewfile`, including development tools, applications, and Oh My Posh.
+
+## Structure
+
+The repository is organized into three main components:
+
+```
+dotfiles/
+├── homebrew/           # Package management
+│   ├── Brewfile       # Homebrew dependencies
+│   └── install.sh     # Installation script
+├── oh-my-posh/        # Terminal prompt theme
+│   └── .config/oh-my-posh/theme.omp.json
+└── zsh/               # Shell configuration
+    └── .config/zsh/
+        ├── aliases    # Command aliases
+        ├── completions # Tab completions
+        ├── history    # History settings
+        ├── keybindings # Key bindings
+        ├── oh-my-posh # Prompt integration
+        ├── zinit      # Plugin manager
+        └── zstyle     # Zsh styles
+```
+
 ## Customization
 
-Feel free to fork this repository and customize the dotfiles to suit your needs. You can modify the existing files or add new configurations and use Stow to manage them as demonstrated above.
+This minimalist setup is designed to be easily customizable:
+
+- **Homebrew**: Edit `Brewfile` to add/remove packages
+- **Oh My Posh**: Modify `theme.omp.json` to customize your prompt
+- **Zsh**: Each configuration aspect is separated into its own file for easy modification
+
+Feel free to fork this repository and adapt it to your needs. The modular structure makes it easy to add new configurations while maintaining the minimalist philosophy.
 
 ## Contributing
 

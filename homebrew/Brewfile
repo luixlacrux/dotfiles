@@ -1,87 +1,28 @@
 # Taps
 tap "jandedobbeleer/oh-my-posh"
-tap "nikitabobko/tap"
 
-# Git and GitHub
-brew "git"
-brew "gh"
+# Git utilities
 brew "git-standup"
-
-# Node and package managers
-brew "nvm"
-brew "pnpm"
-brew "yarn"
-brew "biome"
-
-# Python
-brew "pyenv"
-brew "uv"
 
 # Shell and terminal
 brew "zsh"
-brew "stow"
-brew "coreutils"
 brew "oh-my-posh"
 brew "lsd"
-brew "tree"
-
-# Cloud and DevOps
-brew "awscli"
-brew "flyctl"
-
-# Miscellaneous
-brew "jq"
-brew "ffmpeg"
-brew "ghostscript"
+brew "stow"
 
 # -------------------------
 # Casks
 # -------------------------
-
-# Daily
-cask "raycast"
-cask "1password"
-cask "bitwarden"
-cask "spotify"
-
-# Browsers
-cask "arc"
-cask "firefox"
-cask "google-chrome"
-cask "brave-browser"
-
-# Development
-cask "orbstack"
-cask "postman"
-cask "ngrok"
-cask "warp"
-cask "visual-studio-code"
-cask "cursor"
-
-# Messaging
-cask "zoom"
-cask "slack"
 
 # Fonts
 cask "font-hasklug-nerd-font"
 cask "font-lilex-nerd-font"
 cask "font-monaspace"
 
-# Design
-cask "figma"
-
-# Miscellaneous
-cask "appcleaner"
-cask "dbeaver-community"
-
 # VSCode Extensions
 vscode "astro-build.astro-vscode"
-vscode "biomejs.biome"
-vscode "bradlc.vscode-tailwindcss"
 vscode "charliermarsh.ruff"
-vscode "dbaeumer.vscode-eslint"
 vscode "editorconfig.editorconfig"
-vscode "esbenp.prettier-vscode"
 vscode "janisdd.vscode-edit-csv"
 vscode "miguelsolorio.symbols"
 vscode "mrmlnc.vscode-duplicate"
@@ -89,14 +30,6 @@ vscode "ms-python.black-formatter"
 vscode "ms-python.debugpy"
 vscode "ms-python.python"
 vscode "ms-python.vscode-pylance"
-# vscode "ms-python.vscode-python-envs"
-# Error while installing extension ms-python.vscode-python-envs: Can't install release version of 'Python Environments' extension because it has no release version.
-# Failed Installing Extensions: ms-python.vscode-python-envs
 vscode "ms-vscode.atom-keybindings"
-vscode "rvest.vs-code-prettier-eslint"
-vscode "sibiraj-s.vscode-scss-formatter"
 vscode "streetsidesoftware.code-spell-checker"
-vscode "syler.sass-indented"
 vscode "waderyan.gitblame"
-vscode "yoavbls.pretty-ts-errors"
-vscode "Anthropic.claude-code"
