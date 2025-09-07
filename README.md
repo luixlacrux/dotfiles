@@ -42,6 +42,21 @@ stow zsh
 stow oh-my-posh
 ```
 
+3. Add the following configuration to your `~/.zshrc` file:
+
+```bash
+export ZSH_FOLDER=$HOME/.config/zsh
+export PATH=$PATH:$ZSH_FOLDER/scripts
+
+source $ZSH_FOLDER/zinit
+source $ZSH_FOLDER/keybindings
+source $ZSH_FOLDER/history
+source $ZSH_FOLDER/aliases
+source $ZSH_FOLDER/completions
+source $ZSH_FOLDER/oh-my-posh
+source $ZSH_FOLDER/zstyle
+```
+
 ### Homebrew Installation (macOS)
 
 Install all necessary dependencies and applications using the provided Brewfile:
